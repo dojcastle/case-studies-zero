@@ -406,12 +406,23 @@
         text-align: left;
         margin-right: 0;
         margin-left: auto;
-        max-width: 532px;
+        max-width: 545px;
         font-size: 60px;
         line-height: 60px;
         span {
             color: #BF93FF;
             text-decoration: underline;
+        }
+    }
+    
+    @include media('>=phone') {
+        padding-right: 0;
+        .zero {
+            margin-left: 0;
+        }
+        .article {
+            margin-left: 0;
+            max-width: none;
         }
     }
 }

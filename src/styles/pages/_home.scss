@@ -7,7 +7,7 @@
   color: $color-background;
   background: $color-darkpurple;
   border-radius: 100px;
-  @include font-subheading2($size: 0.5rem);
+  @include font-subheading2($size: 0.5rem); 
   opacity: 0;
 
   @include media('>=phone') {
@@ -181,6 +181,15 @@
         font-size: 60px;
         text-align: center;
         opacity: 0;
+
+        small {
+          @include font-heading($size: $font-size-small);
+          margin-bottom: 18px;
+          text-transform:none !important;
+          @include media('>=phone') {
+            @include font-heading($size: 0.8rem);
+          }
+        }
 
         @include media('>=phone') {
           width: 70%;
