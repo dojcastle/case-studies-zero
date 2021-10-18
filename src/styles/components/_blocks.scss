@@ -10,7 +10,12 @@
 }
 
 .gray {
-    margin-top: 80px;
+    background-color: #F8F9FA;
+}
+
+.w-full {
+    width: 100% !important;
+    max-width: unset !important;
 }
 
 .border-liner {
@@ -42,6 +47,37 @@
     color: #452E66;
     article {
         max-width: 556px;
+        &.custom-content-1 {
+            max-width: 100%;
+            text-align: center;
+            line-height: 1.5;
+            position: relative;
+            padding-bottom: 100px;
+            .img-left {
+               position:absolute;
+               top: -140px;
+               left: 70px;
+               width:190px !important;
+               height: 358px !important;
+               img {
+                   width:100%;
+                   height:auto;
+                   max-height:fit-content;
+               }
+            }
+            .img-right {
+               position:absolute;
+               top: 70px;
+               right: 50px;
+               width:190px !important;
+               height: 358px !important;
+               img {
+                   width:100%;
+                   height: auto;
+                   max-height:fit-content;
+               }
+            }
+        }
     }
     img {
         max-width: 616px;
@@ -67,6 +103,9 @@
     }
     span {
         display: block;
+        &.d-inline {
+            display:inline;
+        }
     }
     .b-zero {
         margin: 15px;
@@ -81,6 +120,9 @@
             text-decoration: underline;
             display: inline;
         }
+    }
+    &.small-gap {
+        gap: 20px;
     }
 }
 
@@ -148,6 +190,9 @@
             display: block;
             margin: 0 auto;
         }
+        .half {
+            min-width: 650px;
+        }
         .one {
             min-width: 1053px;
         }
@@ -193,6 +238,10 @@
         max-width: 890px;
         font-size: 60px;
         line-height: 60px;
+        &.w-auto {
+            max-width: none !important;
+            width: auto !important;
+        }
     }
     p {
         max-width: 514px;
@@ -303,12 +352,27 @@
         .f-text-crypto {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             font-size: 30px;
             line-height: 42px;
             height: 100%;
             .text-box {
                 color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                line-height:1.8;
+                font-weight: 200;
+                img {
+                    position:relative;
+                    left: unset;
+                    max-width: none;
+                    top: 0;
+                    width: auto;
+                    height: auto;
+                    transform: translateX(0);
+                }
             }
             .f-image {
                 position: inherit;

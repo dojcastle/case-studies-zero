@@ -329,7 +329,13 @@
   }
 
   img {
-    width: 100%;
+    width: auto;
+  }
+  .img-auto-size {
+    width: fit-content;
+    height: auto;
+    max-width: none;
+    max-height: none;
   }
 
   #nextchapter {
@@ -376,7 +382,7 @@
 }
 
 .f-small {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .f-medium {

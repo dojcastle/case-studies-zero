@@ -33,7 +33,7 @@
         }
         p {
             font-size: 30px;
-            line-height: 42px;
+            line-height: 1.4;
             max-width: 459px;
         }
     }
@@ -57,12 +57,28 @@
 }
 
 .avatar-separator {
+    position: relative;
     img {
         position: absolute;
         left: 50%;
         transform: translateX(50%);
         max-width: 660px;
         max-height: 210px;
+
+        position: absolute;
+        left: -220px;
+        top: -50px;
+        transform: translateX(0);
+        max-width: none;
+        max-height: none;
+        width: fit-content;
+        height: auto;
+        z-index: -1;
+
+        &.right {
+            left: 10px;
+            transform: scaleX(-1);
+        }
     }
     .circle {
         color: #452E66;
@@ -77,6 +93,12 @@
         z-index: 999;
         display: block;
         margin: 0 auto;
+        &.alt-color-1 {
+            background-color: #F6AAAA;
+        }
+        &.alt-color-2 {
+            background-color: #F3D882;
+        }
     }
 }
 
