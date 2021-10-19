@@ -1,35 +1,44 @@
-.container
+.container-full
     //- .content-wrap.content-3
         //- img(src="/indis-whole.png", alt="section-three")
     .content-wrap.content-3.splitter-container
         img(src="/cr-w.png", alt="world-dots-small").cr-header-img
         .row.mg-0.mb-5
             include ../timeline.pug
-        .row.mb-0.bg.gray.pt-5
-            .col-lg-6.px-0
-                .text-box.small-gap
-                    article.f-medium.t-start Digitizing “Green Energy”    
-                    article.f-small.t-start.cr-small-text by tokenizing it on a blockchain is a revolution for the energy industry
-                    article.f-medium.t-start as it unlocks new permissionless and green business models, and powers the upcoming age of
-                    img.img-auto-size.mt-3(src="/zero-img-crypto-1.png", alt="")
-            .col-lg-6.px-0
-        .row.mb-0.bg.gray.pb-5
-            .col-lg-6.px-0
-            .col-lg-6.px-0
-                .text-box.flex-no-gaps.crypto
-                    img(src="/file-icon.png" alt="icon").size-icon
-                    article.f-medium.t-start Obviously the Crypto world has been the first to understand this potential, as has been shown by the pioneers at Protocol Labs that partnered with us to help them decarbonize the Filecoin network, helping their miners, known as “Storage Providers”, buy Renewable Energy Certificates, in different regions across the globe
-        .row.mb-0.bg
-            .col-lg-6.px-0
-                .text-box.crypto
-                    img(src="/cryptos.png" alt="icon").size-small
-                    h1.f-larger Decarbonizing the Filecoin blockchain
-                    article.f-medium.h-42 In support of the Crypto Climate Accord (CCA), Protocol Labs and Energy Web showcase an open-source solution for decentralized renewable energy purchasing by crypto miners. 
-                    article.f-medium.h-42 Filecoin storage providers purchased verified renewable energy using Energy Web Zero, a public renewable energy search engine
-                    img(src="/crypto-social.png" alt="icon").size-wide
-            .col-lg-6.px-0
-                img(src="/servers.png" alt="icon")
-                img(src="/crypto-s-two.png" alt="icon")
+        .container-full.gray
+            .row.m-0.p-0
+                .col
+                    .container
+                        .row.mb-0.bg.pt-5.px-0
+                            .col-lg-6.px-5
+                                .text-box.small-gap
+                                    h4.subtitle-secondary.mb-3 Digitizing “Green Energy”    
+                                    h4.subtitle-secondary.mini.mb-3 by tokenizing it on a blockchain is a revolution for the energy industry
+                                    h4.subtitle-secondary.mb-5 as it unlocks new permissionless and green business models, and powers the upcoming age of
+                                    img.img-auto-size(src="/zero-img-crypto-1.png", alt="")
+                            .col-lg-6.px-0
+        .container-full.gray
+            .row.m-0.p-0
+                .col
+                    .container
+                        .row.mb-0.bg.pb-5.px-0
+                            .col-lg-6
+                            .col-lg-6.px-5
+                                .text-box.flex-no-gaps.crypto
+                                    img(src="/file-icon.png" alt="icon").size-icon
+                                    h4.subtitle-secondary.mini Obviously the Crypto world has been the first to understand this potential, as has been shown by the pioneers at Protocol Labs that partnered with us to help them decarbonize the Filecoin network, helping their miners, known as “Storage Providers”, buy Renewable Energy Certificates, in different regions across the globe
+        .container           
+            .row.mb-0.bg.px-0
+                .col-lg-6.px-5
+                    .text-box.crypto
+                        img(src="/cryptos.png" alt="icon").size-small
+                        h3.body-text Decarbonizing the Filecoin blockchain
+                        h4.subtitle-secondary.mini.mb-2 In support of the Crypto Climate Accord (CCA), Protocol Labs and Energy Web showcase an open-source solution for decentralized renewable energy purchasing by crypto miners. 
+                        h4.subtitle-secondary.mini.mb-2 Filecoin storage providers purchased verified renewable energy using Energy Web Zero, a public renewable energy search engine
+                        img(src="/crypto-social.png" alt="icon").size-wide
+                .col-lg-6.px-0
+                    img(src="/servers.png" alt="icon")
+                    img(src="/crypto-s-two.png" alt="icon")
         .row.mb-0
             .col-lg-6.px-0
             .col-lg-6.px-0
@@ -40,7 +49,7 @@
         .f-text-crypto
             .text-box
                 img.img-auto-size(src="/logo-crypto-sustainabilty.png" alt="")
-                article.f-small.t-start “We are excited to join the Crypto Climate Accord (cryptoclimate.org) and contribute open-source solutions to the crypto sector. We see various opportunities to enable and incentivize Filecoin storage providers to source their electricity from renewables in a verifiable way”
+                article.subtitle-secondary-inverted.mini “We are excited to join the Crypto Climate Accord (cryptoclimate.org) and contribute open-source solutions to the crypto sector. We see various opportunities to enable and incentivize Filecoin storage providers to source their electricity from renewables in a verifiable way”
                 img.img-auto-size(src="/zero-img-crypto-2.png" alt="")
             img(src="crypto-f-gradient.png" alt="footer-img").f-image.large-sc
             img(src="/shorten-cr-gradient.png" alt="aemo-el")(class="small-sc").f-image.f-s-image.small-sc

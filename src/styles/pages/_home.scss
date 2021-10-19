@@ -173,28 +173,27 @@
         left: 50%;
         bottom: 20%;
         text-align: center;
-        @include font-heading($size: 1.4rem);
+        text-transform: none !important;
+        @include font-subheading2($size: $font-size-heading, $weight: $font-weight-body);
         transition: opacity 0.5s $ease-inout-expo, transform 0.5s $ease-inout-expo;
         transform: translateX(-50%) translateY(40px);
-        max-height: 178px;
-        line-height: 60px;
-        font-size: 60px;
         text-align: center;
         opacity: 0;
+        
 
         small {
-          @include font-heading($size: $font-size-small);
-          margin-bottom: 18px;
           text-transform:none !important;
-          @include media('>=phone') {
-            @include font-heading($size: 0.8rem);
+          @include font-subheading2($size: $font-size-small);
+          margin-bottom: 18px;
+          
+          @include media('<=phone') {
+            @include font-subheading2($size: 0.8rem);
           }
         }
 
         @include media('>=phone') {
           width: 70%;
           bottom: 20%;
-          @include font-heading($size: 2.5rem);
         }
       }
 
@@ -276,6 +275,18 @@
     }
   }
 }
+.img-sum-comp {
+  width: 97px;
+  height: 73px;
+  display: flex;
+  position: fixed;
+  top: 10vh;
+  left: 5vw;
+  > img {
+    width: 97px;
+    height: 73px;
+  }
+}
 
 #content {
   margin-top: 100vh;
@@ -329,7 +340,7 @@
   }
 
   img {
-    width: auto;
+    width: 100%;
   }
   .img-auto-size {
     width: fit-content;
@@ -378,6 +389,161 @@
         transform: scaleX(0);
       }
     }
+  }
+}
+
+.subtitle-secondary {
+  text-transform: none !important;
+  color: $color-darkpurple;
+  font-weight: 400;
+  @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
+
+  @include media('<=phone') {
+    @include font-subheading2($size: 1.1rem);
+    line-height: normal !important; 
+  }
+
+  u {
+    color: $color-primary;
+  }
+
+  small {
+    @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
+    text-transform: none !important;
+    @include media('<=phone') {
+      @include font-subheading2($size: 0.8rem);
+    }
+  }
+      
+  &.mini {
+    text-transform:none !important;
+    @include font-subheading2($size: $font-size-small);
+    
+    @include media('<=phone') {
+      @include font-subheading2($size: 0.8rem);
+    }
+  }
+
+  span {
+    color: $color-primary;
+  }
+}
+
+.subtitle-secondary-inverted {
+  text-transform: none !important;
+  color: $color-secondary;
+  font-weight: 400;
+  @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
+
+  @include media('<=phone') {
+    @include font-subheading2($size: 1.1rem);
+    line-height: normal !important; 
+  }
+
+  u {
+    color: $color-primary;
+  }
+
+  small {
+    @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
+    text-transform: none !important;
+    @include media('<=phone') {
+      @include font-subheading2($size: 0.8rem);
+    }
+  }
+      
+  &.mini {
+    text-transform:none !important;
+    @include font-subheading2($size: $font-size-small);
+    
+    @include media('<=phone') {
+      @include font-subheading2($size: 0.8rem);
+    }
+  }
+
+  span {
+    color: $color-primary;
+  }
+}
+
+.subtitle-upper {
+  text-transform: none !important;
+  color: $color-darkpurple;
+  font-weight: 400;
+  @include font-body($size: $font-size-subheading, $weight: $font-weight-body);
+
+  @include media('<=phone') {
+    @include font-subheading2($size: 1.1rem);
+    line-height: normal !important; 
+  }
+
+  // u {
+  //   color: $color-primary;
+  // }
+
+  small {
+    @include font-body($size: $font-size-subheading2, $weight: $font-weight-body);
+    text-transform: none !important;
+    @include media('<=phone') {
+      @include font-subheading2($size: 0.8rem);
+    }
+  }
+
+  span {
+    color: $color-primary;
+  }
+}
+
+.body-text {
+  text-transform: none !important;
+  font-weight: $font-weight-subheading2;
+  color: $color-darkpurple;
+  @include font-subheading2($size: $font-size-heading);
+  @include media('<=phone') {
+    @include font-subheading2($size: 2rem);
+  }
+
+  div {
+    display: inline-block;
+    background: linear-gradient(132deg, rgba(235,185,242,1) 0%, rgba(246,170,170,1) 55%, rgba(165,102,255,1) 100%);
+    border-radius: 12px;
+    padding:0.1em 0.2em;
+  }
+}
+
+.body-text-inverted-2 {
+  text-transform: none !important;
+  font-weight: $font-weight-subheading2;
+  color: #FFFFFF;
+  @include font-subheading2($size: $font-size-heading);
+  @include media('<=phone') {
+    @include font-subheading2($size: 2rem);
+  }
+}
+
+.body-text-inverted {
+  text-transform: none !important;
+  font-weight: $font-weight-subheading2;
+  color: $color-secondary;
+  @include font-subheading2($size: $font-size-subheading2);
+  @include media('<=phone') {
+    @include font-subheading2($size: 2rem);
+  }
+
+  small {
+    @include font-subheading2($size: $font-size-small);
+    font-weight: 400;
+    text-transform: none !important;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: $color-primary;
+  }
+
+  div {
+    opacity: 0.5;
   }
 }
 
