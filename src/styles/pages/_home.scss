@@ -286,6 +286,10 @@
     width: 97px;
     height: 73px;
   }
+  @include media-breakpoint-down(sm) { 
+    top: 20px;
+    left: 20px;
+  }
 }
 
 #content {

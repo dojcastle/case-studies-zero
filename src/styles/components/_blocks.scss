@@ -265,7 +265,11 @@
             display: block;
             margin: 0 auto;
             max-width: fit-content;
-            width: auto;
+            width: auto; 
+        }
+        .img-sec-two-3 {
+            width:775px !important;
+            height: auto;
         }
     }
     article {
@@ -434,6 +438,51 @@
                 justify-content: space-around;
                 > img {
                     width: auto !important;
+                }
+            }
+        } 
+    }
+    @include media-breakpoint-down(lg) { 
+        padding-top: 200px;
+        >.section-top {
+            &.img-gradient {
+                transform: scale(.8);
+                transform-origin: center bottom;
+                > svg {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: -250px;
+                }
+            }
+        } 
+    }
+    @include media-breakpoint-down(md) { 
+        padding-top: 200px;
+        >.section-top {
+            &.img-gradient {
+                transform: scale(.65);
+                transform-origin: center bottom;
+                > svg {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: -250px;
+                }
+            }
+        } 
+    }
+    @include media-breakpoint-down(sm) { 
+        padding-top: 150px;
+        >.section-top {
+            &.img-gradient {
+                transform: scale(.3);
+                transform-origin: center bottom;
+                > svg {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    left: 50%;
+                    top: -250px;
                 }
             }
         } 
@@ -673,6 +722,10 @@
                 max-height: 137px;
                 margin-top: 50px;
             }
+            .img-crypt0-1 {
+                width: 441px !important;
+                height: auto;
+            }
         }
         .zero-footer-text {
             width: 100%;
@@ -707,6 +760,10 @@
                 img {
                     width: auto !important;
                 }
+            }
+            .img-crypt0-1 {
+                width: 250px !important;
+                height: auto;
             }
         }
     }
