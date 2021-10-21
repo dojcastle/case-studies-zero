@@ -841,16 +841,7 @@
         }
     }
     
-    @include media('>=phone') {
-        padding-right: 0;
-        .zero {
-            margin-left: 0;
-        }
-        .article {
-            margin-left: 0;
-            max-width: none;
-        }
-    }
+    
     @include media-breakpoint-down(lg) { 
         padding-right: 0;
         padding-top: 70px;

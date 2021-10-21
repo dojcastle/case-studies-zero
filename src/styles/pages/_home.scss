@@ -276,7 +276,7 @@
   }
 }
 .img-sum-comp {
-  width: 120px;
+  width: 6%;
   height: auto;
   display: flex;
   position: fixed;
@@ -287,8 +287,13 @@
     width: 100%;
     height: auto;
   }
+  @include media-breakpoint-down(md) { 
+    width: 15%;
+    top: 20px;
+    left: 20px;
+  }
   @include media-breakpoint-down(sm) { 
-    width: 90px;
+    width: 20%;
     top: 20px;
     left: 20px;
   }
