@@ -80,6 +80,7 @@
            left: -100px;
            width:190px !important;
            height: 358px !important;
+           z-index: -1;
            img {
                width:100%;
                height:auto;
@@ -89,9 +90,10 @@
         .img-right {
            position:absolute;
            top: 70px;
-           right: -100px;
+           right: -130px;
            width:190px !important;
            height: 358px !important;
+           z-index: -1;
            img {
                width:100%;
                height: auto;
