@@ -1,7 +1,7 @@
 {
   "name": "energyweb",
   "version": "1.0.0",
-  "author": "Reksa Andhika Pamungkas",
+  "author": "",
   "scripts": {
     "start": "npm run development",
     "build": "webpack --config webpack.config.build.js",
