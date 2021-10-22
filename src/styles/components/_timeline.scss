@@ -36,6 +36,9 @@
             line-height: 1.4;
             max-width: 459px;
         }
+        &.txt-right {
+            text-align: right;
+        }
     }
     .left {
         padding: 30px;
@@ -51,6 +54,9 @@
         .card-body {
             text-align: center;
             padding: 0;
+            &.txt-right {
+                text-align: center;
+            }
         }
         .left {
             text-align: center;
