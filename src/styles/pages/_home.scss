@@ -556,6 +556,21 @@
   }
 }
 
+.icon-cca {
+  @include media-breakpoint-down(sm) { 
+    width:200px; 
+    height:auto;
+  }
+}
+.icon-cca:hover {
+  cursor:pointer;
+  path {
+    transition:all .3s ease-in-out;
+    fill: #A566FF;
+  }
+}
+
+
 .f-small {
   font-size: 20px !important;
 }
